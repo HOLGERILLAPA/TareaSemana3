@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TareaSemana2.Nota">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="PROMEDIO DE NOTAS" HorizontalOptions= "Center" FontSize="20" TextColor="DarkOliveGreen"/>
+                            <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition  />
+                    </Grid.ColumnDefinitions>
+
+
+                
+                                
+                <Label Text="Nota Seguimiento 1" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="TextNotaSeguimiento1" Placeholder=" Ingrese Nota Seguimiento 1" Grid.Row="0" Grid.Column="1" Keyboard="Numeric"/>
+
+                <Label Text="Nota del Examen 1" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="TxtExamenparcial1" Placeholder=" Ingrese Nota del Examen" Grid.Row="1" Grid.Column="1" Keyboard="Numeric"/>
+
+                <Label Text="Nota Parcial 1" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="PrimeraNotaParcial" Placeholder=" parcial1" IsReadOnly="True" Grid.Row="2" Grid.Column="1" Keyboard="Numeric"/>
+                
+              <Label Text="Nota Seguimiento 2" Grid.Row="3" Grid.Column="0"/>
+                <Entry x:Name="TextNotaSeguimiento2" Placeholder=" Ingrese Nota Seguimiento 2" Grid.Row="3" Grid.Column="1" Keyboard="Numeric"/>
+
+                <Label Text="Nota del Examen2" Grid.Row="4" Grid.Column="0"/>
+                <Entry x:Name="TxtExamenparcia12" Placeholder=" Ingrese Nota del Examen" Grid.Row="4" Grid.Column="1" Keyboard="Numeric"/>
+                
+                <Label Text="Nota Parcial 2 " Grid.Row="5" Grid.Column="0"/>
+                <Entry x:Name="SegundaNotaParcial" Placeholder=" Parcial2" IsReadOnly="True" Grid.Row="5" Grid.Column="1" Keyboard="Numeric"/>
+                                
+                <Label Text="Nota Final " Grid.Row="6" Grid.Column="0"/>
+                <Entry x:Name="Notafinal" Placeholder=" notafinal" IsReadOnly="True" Grid.Row="6" Grid.Column="1" Keyboard="Numeric"/>
+                
+                
+                </Grid>
+        
+            <Button x:Name="BtnNota" Text="NOTA" Clicked="BtnNota_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
